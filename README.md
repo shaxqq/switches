@@ -1,2 +1,0 @@
-# switches.github.io
-switchsite
