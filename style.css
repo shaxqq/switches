@@ -134,6 +134,9 @@ body {
   .header {
     background-size: cover;
   }
+  .header__switches {
+    height: 179px;
+  }
 }
 .device {
   display: flex;
