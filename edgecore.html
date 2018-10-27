@@ -100,16 +100,16 @@
                 <p class="main__text">show interfaces counters ethernet 1/№ - посмотреть ошибки на порту</p> 
                     <img class="main__img" src="images/edgecore/7.png" width="825px">
                 <p class="main__text--content"> <br>
-                    Тест кабеля можно сделать не на всех версиях <br>
+                    <b>Тест кабеля можно сделать не на всех версиях</b> <br>
                     sh cable-diagnstic interface ethernet 1/№<br><br>
                         
-                    Добавить Vlan<br>
+                    <b>Добавить Vlan</b><br>
                     Заходим на порт<br>
                     Vty-0(config-if)# switchport mode access<br>
                     Vty-0(config-if)# switchport allowed vlan add № untagged<br>
                     Vty-0(config-if)# switchport native vlan № (native - PVID)<br>
                     
-                    Удалить Vlan<br>
+                    <b>Удалить Vlan</b><br>
                     Vty-0(config-if)# switchport allowed vlan remove №<br>
                     </p> 
             </div>
