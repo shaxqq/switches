@@ -114,40 +114,40 @@
                     <img class="main__img" src="images/linksys/15.png" width="432px"><br>
                 <p class="main__text--content">
                     
-<b />Удалить влан по умолчанию<br>
+<b>Удалить влан по умолчанию</b><br>
 1.	console – заходим в конфиг (config)<br>
 2.	console(config)# – заходим на порт (interface ethernet e”№” )<br>
 3.	console(config-if)# – switchport general allowed vlan remove all<br><br>
                     
-<b />Прокинуть Vlan на порт<br>
+<b>Прокинуть Vlan на порт</b><br>
 1.	console – заходим в конфиг (config) <br>
 2.	console(config)# – заходим на порт (interface ethernet e”№” )<br>
 3.	console(config-if)# – switchport mode access<br>
 4.	console(config-if)# – switchport access vlan ”№”<br><br>
 
-<b />Прокинуть Vlan на 1ГБ порт<br>
+<b>Прокинуть Vlan на 1ГБ порт</b><br>
 1.	console – заходим в конфиг (config)<br>
 2.	console(config)# – заходим на порт (interface ethernet g”№” )<br>
 3.	console(config-if)# switchport trunk allowed vlan remove all<br>
 4.	console(config-if)# – switchport mode access<br>
 5.	console(config-if)# – switchport access vlan ”№”<br><br>
 
-<b />Добавить/удалить Description<br>
+<b>Добавить/удалить Description</b><br>
 1.	console – заходим в конфиг (config)<br>
 2.	console(config)# – заходим на порт (interface ethernet e”№” )<br>
 3.	console(config-if)# – description «описание»<br>
 4.	console(config-if)# – no description – удалить описание<br><br>
 
-<b />Вкл/Выкл Flowcontrol<br>
+<b>Вкл/Выкл Flowcontrol</b><br>
 1.	console – заходим в конфиг (config)<br>
 2.	console(config)# – заходим на порт (interface ethernet e”№” )<br>
 3.	console(config-if)# – flowcontrol “on/off”<br><br>
 
-<b />Вкл/Выкл отображение логов<br>
+<b>Вкл/Выкл отображение логов</b><br>
 1.	console – заходим в конфиг (config)<br>
 2.	console(config)# – no logging console<br><br>
 
-<b />Если абоненты находятся в 1 свиче но не могут пропинговать друг друга.<br>
+<b>Если абоненты находятся в 1 свиче но не могут пропинговать друг друга.</b><br>
 1.	console – заходим в конфиг (config)<br>
 2.	console(config)# – interface vlan № (заходим во Vlan)<br>
 3.	console(config-if)# - во влане пишем (no switchport protected-port fastethernet)<br><br>
