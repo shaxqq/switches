@@ -112,7 +112,14 @@
                     <img class="main__img" src="images/linksys/14.png" width="914px">
                 <p class="main__text">sh cpu utilization – посмотреть загрузку ЦПУ свича</p> 
                     <img class="main__img" src="images/linksys/15.png" width="432px"><br>
-                <p class="main__text--content">Прокинуть Vlan на порт<br>
+                <p class="main__text--content">
+                    
+Удалить влан по умолчанию<br>
+1.	console – заходим в конфиг (config)<br>
+2.	console(config)# – заходим на порт (interface ethernet e”№” )<br>
+3.	console(config-if)# – switchport general allowed vlan remove all<br><br>
+                    
+Прокинуть Vlan на порт<br>
 1.	console – заходим в конфиг (config) <br>
 2.	console(config)# – заходим на порт (interface ethernet e”№” )<br>
 3.	console(config-if)# – switchport mode access<br>
@@ -143,7 +150,9 @@
 Если абоненты находятся в 1 свиче но не могут пропинговать друг друга.<br>
 1.	console – заходим в конфиг (config)<br>
 2.	console(config)# – interface vlan № (заходим во Vlan)<br>
-3.	console(config-if)# - во влане пишем (no switchport protected-port fastethernet)<br>
+3.	console(config-if)# - во влане пишем (no switchport protected-port fastethernet)<br><br>
+
+
 </p>
                     
             </div>
