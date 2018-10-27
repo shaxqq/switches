@@ -98,11 +98,23 @@
                     <img class="main__img" src="images/bdcom/5.png" width="946px">
                 <p class="main__text">sh vlan – посмотреть Vlan`ы на свиче</p> 
                     <img class="main__img" src="images/bdcom/6.png" width="702px"><br>
-                <p class="main__text--content">Если абонента подключили в 1ГБ порт, то нужно сделать его аксесным и выставить pvid.<br>
-                    Switch#config<br>
-                    Switch_config#interface gigaEthernet 0/№<br>
-                    Switch_config_g0/1# switchport mode access<br>
-                    Switch_config_g0/1# switchport pvid (№ абонентського Vlan`a)
+                <p class="main__text--content">
+                    
+<b>Если абонента подключили в 1ГБ порт, то нужно сделать его аксесным и выставить pvid.</b><br>
+Switch#config<br>
+Switch_config#interface gigaEthernet 0/№<br>
+Switch_config_g0/1# switchport mode access<br>
+Switch_config_g0/1# switchport pvid (№ абонентського Vlan`a)<br><br>
+                    
+<b>Cлавута olt</b><br>
+interface ePON 0/1 в биллинге порт 12<br>
+interface ePON 0/2 в биллинге порт 13<br>
+interface ePON 0/3 в биллинге порт 14<br>
+interface ePON 0/4 в биллинге порт 15<br>
+interface ePON 0/5 в биллинге порт 16<br>
+interface ePON 0/6 в биллинге порт 17<br>
+interface ePON 0/7 в биллинге порт 18<br>
+interface ePON 0/8 в биллинге порт 19<br><br>
                     </p> 
             </div>
         </div>  
