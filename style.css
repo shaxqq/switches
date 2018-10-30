@@ -67,7 +67,7 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .nav {
-    padding: 0 5%;
+    padding: 30px 5%;
   }
   .nav__item-check {
     display: none;
