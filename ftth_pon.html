@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Коммутаторы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script src="scroll.js"></script>
+</head>
+<body>
+    <header class="nav">
+        <div class="nav__logo">
+            <a href="index.html" class="nav__text" > Swit</a>
+            <a href="index.html"class="nav__text--right">ches</a>
+          </div>
+        <ul class="nav__list">
+            <!-- <li class="nav__item">
+                <a href="zte.html" class="nav__link">ZTE</a></li>
+            <li class="nav__item">
+                <a href="dlink.html" class="nav__link">D-link</a></li> -->
+            <li class="nav__item">
+                <a href="radio.html" class="nav__link">Радиоканал</a></li>
+            <li class="nav__item">
+                <a href="fttb.html" class="nav__link">FTTB</a></li>
+            <li class="nav__item">
+                <a href="ftth_mediaconverter.html" class="nav__link">FTTH-Медиаконвертер</a></li>
+            <li class="nav__item">
+                <a href="ftth_pon.html" class="nav__link">FTTH-PON</a></li>
+            </ul>
+            <li class="nav__item-check">
+                <label for="checkbox-button-menu">☰</label>
+                <input id="checkbox-button-menu" type="checkbox" hidden />
+                <ul class="button-menu">
+                    <!-- <li class="button-menu__item">
+                        <a href="#" class="button-menu__link">ZTE</a>
+                    </li>
+                    <li class="button-menu__item">
+                        <a href="#" class="button-menu__link">D-link</a>
+                    </li> -->
+                    <li class="button-menu__item">
+                        <a href="radio.html" class="button-menu__link">Радиоканал</a>
+                    </li>
+                    <li class="button-menu__item">
+                        <a href="fttb.html" class="button-menu__link">FTTB</a>
+                    </li>
+                    <li class="button-menu__item">
+                        <a href="ftth_mediaconverter.html" class="button-menu__link">FTTH-Медиаконвертер</a>
+                    </li>
+                    <li class="button-menu__item">
+                        <a href="ftth_pon.html" class="button-menu__link">FTTH-PON</a>
+                    </li>
+                </ul>
+            </li>
+        </header>
+
+        <section class="header__switches">
+            <h1 class="header__title">FTTH-PON</h1>
+            <!-- <p class="header__content">directory on switches</p> -->
+        </section>
+
+        <section class="scroll__button">
+            <div class="scroll__item" id="top">
+                <p class="scroll__text"></p>
+            </div>
+        </section>
+
+    <section class="main">
+        <div class="main__description">
+            <div class="main__content">
+                <!-- <h1 class="main__title">BDCOM</h1> -->
+                <p class="main__text--content"><b>PON</b> – (Passive Optical Network) что переводится, как пассивная оптическая сеть. Это, по сути, технология абонентского множественного доступа посредством одного волокна с применением временного мультиплексирования (TDM) и разделения частотного трактов приёма/передачи (WDM). <br>
+                    <b>Основная идея архитектуры PON</b> — использование всего одного приёмопередающего модуля в OLT (англ. optical line terminal) для передачи информации множеству абонентских устройств ONT (optical network terminal в терминологии ITU-T), также называемых ONU (optical network unit) в терминологии IEEE и приёма информации от них.
+                    </p> <br>
+                <p class="main__text--content"><b>Схема подключения</b></p> 
+                <img class="main__img" src="images/bdcom/7.png" width="783px"><br>
+                <p class="main__text--content"><b>OLT</b> (Optical line termination) – свитч L2, оснащённый Uplink портами (чтобы подключаться к оборудованию L3 "шлюз") и Downlink портами (для создания сети PON). </p> <br>
+                <img class="main__img" src="images/bdcom/8.png" width="900px"><br>
+                <p class="main__text--content"><b>Модуль SFP OLT</b> – является специальным трансивером для сетей PON. Важное отличие от стандартных модулей SFP - большая мощность и кодирование канала.</p> <br>
+                <img class="main__img" src="images/bdcom/11.png" width="425px"><br>
+                <p class="main__text--content"><b>Сплиттер</b> (Разветвитель) – это устройство, которое работает в разветвительном режиме в направлении "провайдер - клиент" и в смесительном режиме в обратном направлении.</p> <br>
+                <img class="main__img" src="images/bdcom/10.png" width="625px"><br>
+                <p class="main__text--content"><b>ONU</b> (Optical Network Unit) – свитч "VLAN" компактного размера. Стандартно ONU оснащён 1-им оптическим 1Г портом (Uplink) и одним 1Г, либо 4-мя 100МБит медными портами (Downlink). Есть модели ONU c 8-ью, 16-ью и 24-мя портами</p> <br>
+                <img class="main__img" src="images/bdcom/9.png" width="425px"><br><br>
+                <p class="main__text--content"> <br>
+                - <b>SFP OLT</b> модули поддерживают работу на дистанцию - 120 км (тип сети "точка-точка"), но поскольку, традиционно сеть PON имеет древовидную структуру (точка–много-точек), то максимальная дистанция работы PON, из-за разветвления на сплиттерах волокна, будет составлять около 20 км.<br>
+                - Если абонентами <b>PON</b> дерева (64-мя абонентами) будет одновременно скачиваться из Интернета большой объём информации, то на каждого абонента придётся канал в 16 Мбит/с. А если ещё учесть, что не все абоненты Интернетом пользуются одновременно, а те, что пользуются, не потребляют ресурс канала по максимуму, то на абонента даже может приходиться до 50-ти Мбит/с, иногда даже выше.<br>
+                - Если на одной/нескольких <b>ONU</b> - сигнальный уровень будет очень слабым (< -26 дБм), то появляется большая вероятность возникновения ошибок в пакетной передаче с таких ONU. В приведённом случае OLT растрачивает кванты времени на то, чтобы дать ONU возможность отправить ещё раз пакет. Эти повторные запросы понижают эффективность пропускной способности сети.<br>
+                - Чтобы определить затухания в линии можно использовать специальные рефлектометры для <b>PON</b> (они существенно дороже обычных), либо оптическими тестерами. Когда сеть уже выстроена, то самым простым решением для проверки уровней сигналов - будет использование специальных команд командного интерфейса OLT-а.<br>
+               - Каждая операция по обмену информацией между ONU происходит через OLT.<br><br>
+                <b>GPON (Gigabit Passive Optical Networks)</b> базируется на стандарте ITU-T G.984 <br>
+                Преимуществами технологии <b>GPON</b> являются:<br>
+                - полностью пассивная оптическая сеть;<br>
+                - меньше затраты на электроэнергию;<br>
+                - оборудование занимает меньше места;<br>
+                - удобство обслуживания и простота подключения новых абонентов;<br>
+                - возможность подключения по одному оптическому волокну до 64 абонентов.<br><br>
+                <b>GEPON (Gigabit Ethernet Passive Optical Networks)</b> стандарт IEEE 802.3ah.<br>
+                Преимуществами технологии <b>GEPON</b> являются:<br>
+                - позволяет оптимально использовать волоконно-оптический ресурс кабеля;<br>
+                - благодаря стандартным механизмам 802.3 ah происходит снижение стоимости
+                оборудования;<br>
+                - возможность подключения по одному оптическому волокну до 16 абонентов;<br>
+                - простота установки и обслуживания;<br>
+                - передача потокового видео (IGMP Snooping).<br>
+                Основным преимуществом GEPON является низкая цена по сравнению с
+                GPON.<br><br>
+                <b>GPON</b> более удобной решение для сетей большой емкости и протяженности.
+                Но более сложное и дорогостоящее оборудование окупается только при высокой
+                степени загрузки.<br>
+                В <b>GEPON</b>, в отличие от GPON, нет специфических функций поддержки
+                TDM, синхронизации и защитных переключений, что делает эту технологию самой
+                экономичной.
+                                
+                </p>
+            </div>
+        </div>  
+    </section>
+
+    <section class="footer">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <p class="footer__title">Sub Menu</p>
+                    <a href="radio.html" class="footer__link">Радиоканал</a>
+                    <a href="fttb.html" class="footer__link">FTTB</a>
+                    <a href="ftth_mediaconverter.html" class="footer__link">FTTH-Медиаконвертер</a>
+                    <a href="ftth_pon.html" class="footer__link">FTTH-PON</a>
+                    <!-- <a href="raisecom.html" class="footer__link">Raisecom</a> -->
+                    
+                </li>
+            </ul>
+            <!-- <ul class="footer__list">
+                <li class="footer__item">
+                <p class="footer__title">Sub Menu</p>
+                    <a href="bdcom.html" class="footer__link">BDCOM</a>
+                    <a href="edgecore.html" class="footer__link">EdgeCore</a>
+                    <a href="quidway.html" class="footer__link">Quidway</a>
+                    <a href="l3zte.html" class="footer__link">L3-ZTE</a>
+                    <a href="l3cisco.html" class="footer__link">L3-Cisco</a>
+                </li>
+            </ul> -->
+    
+            <div class="footer__social">
+            <ul class="footer__social--link">
+                <li class="footer__social--item">
+                    <a href="" class="footer__social--item footer__social--facebook"></a>
+                </li>
+                <li class="footer__social--item">
+                    <a href="" class="footer__social--item footer__social--twitter"></a>
+                </li>
+                <li class="footer__social--item">
+                    <a href="" class="footer__social--item footer__social--dribbble"></a>
+                </li>
+                <li class="footer__social--item">
+                    <a href="вопросы_тех.docx" class="footer__social--item footer__social--share"></a>
+                </li>
+            </ul>
+            <p class="footer__copy">Copyright © 2018 shaxqq</p>
+            </div>
+            
+        </section>
+</body>
+</html>

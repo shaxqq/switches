@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Коммутаторы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script src="scroll.js"></script>
+</head>
+<body>
+    <header class="nav">
+        <div class="nav__logo">
+            <a href="index.html" class="nav__text" > Swit</a>
+            <a href="index.html"class="nav__text--right">ches</a>
+          </div>
+        <ul class="nav__list">
+            <!-- <li class="nav__item">
+                <a href="zte.html" class="nav__link">ZTE</a></li>
+            <li class="nav__item">
+                <a href="dlink.html" class="nav__link">D-link</a></li> -->
+            <li class="nav__item">
+                <a href="radio.html" class="nav__link">Радиоканал</a></li>
+            <li class="nav__item">
+                <a href="fttb.html" class="nav__link">FTTB</a></li>
+            <li class="nav__item">
+                <a href="ftth_mediaconverter.html" class="nav__link">FTTH-Медиаконвертер</a></li>
+            <li class="nav__item">
+                <a href="ftth_pon.html" class="nav__link">FTTH-PON</a></li>
+            </ul>
+            <li class="nav__item-check">
+                <label for="checkbox-button-menu">☰</label>
+                <input id="checkbox-button-menu" type="checkbox" hidden />
+                <ul class="button-menu">
+                    <!-- <li class="button-menu__item">
+                        <a href="#" class="button-menu__link">ZTE</a>
+                    </li>
+                    <li class="button-menu__item">
+                        <a href="#" class="button-menu__link">D-link</a>
+                    </li> -->
+                    <li class="button-menu__item">
+                        <a href="radio.html" class="button-menu__link">Радиоканал</a>
+                    </li>
+                    <li class="button-menu__item">
+                        <a href="fttb.html" class="button-menu__link">FTTB</a>
+                    </li>
+                    <li class="button-menu__item">
+                        <a href="ftth_mediaconverter.html" class="button-menu__link">FTTH-Медиаконвертер</a>
+                    </li>
+                    <li class="button-menu__item">
+                        <a href="ftth_pon.html" class="button-menu__link">FTTH-PON</a>
+                    </li>
+                </ul>
+            </li>
+        </header>
+
+        <section class="header__switches">
+            <h1 class="header__title">FTTB</h1>
+        </section>
+
+        <section class="scroll__button">
+            <div class="scroll__item" id="top">
+                <p class="scroll__text"></p>
+            </div>
+        </section>
+
+    <section class="main">
+        <div class="main__description">
+            <div class="main__content">
+                <p class="main__text--content"><b>FTTB</b> – (Fiber To The Building) что переводится как оптика до здания. Волоконно-оптический кабель ведется от центрального узла в каждый дом, а затем внутридомовая разводка производится медным кабелем. Квартиры также подключаются с помощью медного кабеля типа «витая пара» категории 5е.
+                    </p> <br>
+                <p class="main__text--content"><b>Схема подключения</b></p> 
+                <img class="main__img" src="images/fttb/fttb.png" width="883px"><br>
+                <p class="main__text--content"><b>Сетевой коммутатор</b> ("L2" switch) — устройство, предназначенное для соединения нескольких узлов компьютерной сети в пределах одного или нескольких сегментов сети. За частую имеет 24 порта для подключения медного кабеля и 4 комбинированных порта для подключения к улюзу "L3" и к другим "L2" коммутаторам.</p> <br>
+                <img class="main__img" src="images/fttb/switch.png" width="900px"></p>
+                <p class="main__text--content">Этот подход целесообразно применять в случае развертывания сети в многоквартирных домах. <br>
+                    <b>Основные преимущества технологии FTTB:</b><br>
+                    - доступность, отсутствие необходимости в покупке дополнительного оборудования (медиаконвертера и т.д.);<br>
+                    - доступ к сети со скоростью до 100 Мбит/с;<br>
+                    - высокое качество передачи данных;<br>
+                    - надежность сети за счет применения технологии кольцевого резервирования и использования магистральных линий связи в подземных коммуникациях;<br>
+                    - широкие возможности для получения услуг таких, как цифровое интерактивное телевидение;<br>
+                    - симметричная полоса пропускания (прием и передача данных с одинаковой скоростью), что удобно при работе с файлообменными сетями;<br><br>
+                    <b>Основным недостатком данной технологии</b> является то, что по стандарту максимальная длина медного кабеля не может превышать 100 метров. Таким образом, для охвата всех квартир многоквартирного дома нужно установить несколько абонентских узлов с активным оборудованием (требующего электропитания), что в свою очередь снижает надёжность сети вцелом. Это связано с тем, что на каждом узле должно быть обеспечено бесперебойное электропитание, что в условиях жилых домов сделать достаточно сложно или дорого, а поэтому многие провайдеры его на этом экономят.
+                </p> 
+                
+                </p>
+            </div>
+        </div>  
+    </section>
+
+    <section class="footer">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <p class="footer__title">Sub Menu</p>
+                    <a href="radio.html" class="footer__link">Радиоканал</a>
+                    <a href="fttb.html" class="footer__link">FTTB</a>
+                    <a href="ftth_mediaconverter.html" class="footer__link">FTTH-Медиаконвертер</a>
+                    <a href="ftth_pon.html" class="footer__link">FTTH-PON</a>
+                    <!-- <a href="raisecom.html" class="footer__link">Raisecom</a> -->
+                    
+                </li>
+            </ul>
+            <!-- <ul class="footer__list">
+                <li class="footer__item">
+                <p class="footer__title">Sub Menu</p>
+                    <a href="bdcom.html" class="footer__link">BDCOM</a>
+                    <a href="edgecore.html" class="footer__link">EdgeCore</a>
+                    <a href="quidway.html" class="footer__link">Quidway</a>
+                    <a href="l3zte.html" class="footer__link">L3-ZTE</a>
+                    <a href="l3cisco.html" class="footer__link">L3-Cisco</a>
+                </li>
+            </ul> -->
+    
+            <div class="footer__social">
+            <ul class="footer__social--link">
+                <li class="footer__social--item">
+                    <a href="" class="footer__social--item footer__social--facebook"></a>
+                </li>
+                <li class="footer__social--item">
+                    <a href="" class="footer__social--item footer__social--twitter"></a>
+                </li>
+                <li class="footer__social--item">
+                    <a href="" class="footer__social--item footer__social--dribbble"></a>
+                </li>
+                <li class="footer__social--item">
+                    <a href="вопросы_тех.docx" class="footer__social--item footer__social--share"></a>
+                </li>
+            </ul>
+            <p class="footer__copy">Copyright © 2018 shaxqq</p>
+            </div>
+            
+        </section>
+</body>
+</html>

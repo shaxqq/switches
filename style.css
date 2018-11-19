@@ -10,6 +10,107 @@ body {
   width: 100%;
   background-color: rgba(139, 139, 139, 0.25);
 }
+.title {
+  display: flex;
+  background-image: url('images/ono.jpg');
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+.title__text {
+  margin: 0;
+  color: #ffffff;
+  font-size: 68px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 20%;
+}
+.title__content {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.title__section {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+.title__section--training {
+  width: 50%;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 10%;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  transition: 1s;
+}
+.title__section--training:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.title__section--training::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: inherit;
+  content: ' ';
+}
+.title__section--command {
+  width: 50%;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 10%;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  transition: 1s;
+}
+.title__section--command:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.title__section--command::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: inherit;
+  content: ' ';
+}
+@media screen and (max-width: 1024px) {
+  .title {
+    background-size: cover;
+  }
+  .title__text {
+    margin-top: 35%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .title {
+    background-size: cover;
+  }
+  .title__text {
+    margin-top: 55%;
+    text-align: center;
+  }
+  .title__section--training {
+    font-size: 20px;
+    padding: 15%;
+  }
+  .title__section--command {
+    font-size: 20px;
+    padding: 15%;
+  }
+}
 .nav {
   display: flex;
   justify-content: space-between;
@@ -38,6 +139,7 @@ body {
   display: flex;
   align-items: center;
   list-style: none;
+  padding: 0;
 }
 .nav__list :hover {
   color: #19b5fe;
@@ -49,9 +151,8 @@ body {
   position: relative;
 }
 .nav__item-check {
-  margin-left: 20px;
   position: relative;
-  display: none; 
+  display: none;
 }
 .nav__item-check :hover {
   text-decoration: none;
@@ -91,7 +192,6 @@ body {
   justify-content: flex-end;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
   background-repeat: no-repeat;
 }
 .header__title {
@@ -100,6 +200,7 @@ body {
   font-size: 68px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 40%;
 }
 .header__content {
   color: #ffffff;
@@ -135,6 +236,9 @@ body {
   }
   .header__switches {
     height: 179px;
+  }
+  .header__title {
+    font-size: 35px;
   }
 }
 .device {
@@ -310,17 +414,35 @@ body {
   color: #8b8b8b;
   margin: 0;
   padding: 0;
+  line-height: 20px;
 }
 .main__img {
   align-self: center;
 }
+.main__table {
+  text-align: center;
+  color: #8b8b8b;
+}
+.main__table--top {
+  background-color: #e9e9e9;
+  font-weight: bold;
+}
 @media screen and (max-width: 1024px) {
+  .main {
+    padding: 50px 10%;
+  }
   .main__img {
     width: 100%;
     align-items: center;
   }
+  .main__table--scheme {
+    display: none;
+  }
 }
 @media screen and (max-width: 800px) {
+  .main {
+    padding: 50px 2%;
+  }
   .main__img {
     width: 100%;
   }
@@ -346,6 +468,7 @@ body {
   color: #aeaeae;
   font-size: 21px;
   line-height: 22px;
+  margin-top: 0;
 }
 .footer__link {
   color: #8b8b8b;
@@ -459,8 +582,8 @@ body {
     width: 25px;
     height: 25px;
     position: fixed;
-    bottom: 5px;
-    right: 5px;
+    bottom: 41px;
+    right: 31px;
   }
   .scroll__item {
     background-image: url('https://cdn3.iconfinder.com/data/icons/common-4/24/ui-22-512.png');
@@ -479,8 +602,8 @@ body {
     width: 35px;
     height: 35px;
     position: fixed;
-    bottom: 5px;
-    right: 5px;
+    bottom: 32px;
+    right: 20px;
   }
   .scroll__item {
     background-image: url('https://cdn3.iconfinder.com/data/icons/common-4/24/ui-22-512.png');
