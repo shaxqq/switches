@@ -128,7 +128,8 @@
 <b>Прокинуть Vlan на 1ГБ порт</b><br>
 1.	console – заходим в конфиг (config)<br>
 2.	console(config)# – заходим на порт (interface ethernet g”№” )<br>
-3.	console(config-if)# switchport trunk allowed vlan remove all<br>
+3.	console(config-if)# – switchport trunk allowed vlan remove all - если порт "Trunk (Транк)"<br>
+3.1. console(config-if)# – switchport general allowed vlan remove all - если порт "General (Общий)"<br>
 4.	console(config-if)# – switchport mode access<br>
 5.	console(config-if)# – switchport access vlan ”№”<br><br>
 
